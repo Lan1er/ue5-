@@ -1,0 +1,32 @@
+# 文本文件统一换行策略：仓库内存 LF，检出时按平台
+* text=auto
+
+# ---------------- 二进制资产（不做换行转换、不做 diff）----------------
+*.uasset binary
+*.umap    binary
+*.ubulk   binary
+*.uexp    binary
+*.upk     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.tga     binary
+*.psd     binary
+*.exr     binary
+*.hdr     binary
+*.wav     binary
+*.ogg     binary
+*.mp3     binary
+*.fbx     binary
+*.xlsx    binary
+*.docx    binary
+
+# ---------------- 明确标注的文本类型 ----------------
+*.h     text
+*.cpp   text
+*.cs    text
+*.ini   text
+*.json  text
+*.py    text
+*.md    text
+*.bat   text eol=crlf

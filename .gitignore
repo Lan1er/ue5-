@@ -1,0 +1,49 @@
+# ============================================================
+# Metamorphosis — 版本管理忽略规则
+# 原则：只跟踪「人写的源码 / 配置 / 表格」；
+#       引擎生成物、本地缓存、第三方资源包一律不进仓库。
+# ============================================================
+
+# ---------------- 引擎生成物 / IDE ----------------
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/*/FileOpenOrder/
+Build/Android_ASTC/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+.vs/
+.vscode/
+.idea/
+*.code-workspace
+
+# ---------------- 第三方资源包（按各自 EULA，不随仓库分发）----------------
+# 详见 README「资源与许可」。从 Fab / Epic 商城自行获取后放回同名目录即可。
+Content/AtmosphericHouse/
+Content/SovietFlat/
+Content/Nuclear_winter/
+Content/Characters/Mannequins/
+
+# ---------------- 本地工作目录（体积过大，未纳入仓库）----------------
+# 美术源文件、开发笔记、地编原始交付包
+SourceArt/
+Docs/
+初版地图/
+_staging/
+
+# ---------------- 编辑器 / 系统杂项 ----------------
+Config/DefaultEditorPerProjectUserSettings.ini
+__pycache__/
+*.pyc
+*.log
+*.tmp
+Thumbs.db
+desktop.ini
+~$*
